@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { ClickableParentComponent } from './clickable-parent/clickable-parent.component';
 import { ClickableComponent } from './clickable/clickable.component';
 import { UserComponent } from './user/user.component';
+import { DeleteButtonComponent } from './delete-button/delete-button.component';
 
 @NgModule({
   declarations: [
@@ -14,12 +15,14 @@ import { UserComponent } from './user/user.component';
     ClickableParentComponent,
     ClickableComponent,
     UserComponent,
+    DeleteButtonComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AgGridModule.withComponents([
-        ClickableParentComponent
+        ClickableParentComponent,
+        DeleteButtonComponent
     ])
   ],
   providers: [],

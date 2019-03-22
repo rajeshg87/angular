@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { GridOptions } from 'ag-grid-community';
 import { ClickableParentComponent } from '../clickable-parent/clickable-parent.component';
+import { DeleteButtonComponent } from '../delete-button/delete-button.component';
 
 @Component({
   selector: 'app-user',
@@ -26,6 +27,12 @@ export class UserComponent implements OnInit {
               headerName: 'Clickable Component',
               field: 'name',
               cellRendererFramework: ClickableParentComponent,
+              width: 330
+          },
+          {
+              headerName: 'Delete Component',
+              field: 'name',
+              cellRendererFramework: DeleteButtonComponent,
               width: 330
           }
       ];
