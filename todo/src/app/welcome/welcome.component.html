@@ -3,3 +3,13 @@
   Welcome to TODO application
   You can manage your tasks <a routerLink="/todos">here</a>
 </div>
+
+<div class="container">
+  Click here to get Welcome Message
+  <button class="btn btn-success" (click) = "getWelcomeMessage()">Welcome Message</button>
+</div>
+
+<div class="container" *ngIf="welcomeMessageFromService" >
+  <h3>Customized Welcome Message from Service</h3>
+  {{welcomeMessageFromService}}
+</div>
